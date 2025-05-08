@@ -4,7 +4,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #CDD3CE;
+    /* background-color: #CDD3CE; */
+    background-image: url('https://www.collegenp.com/uploads/2023/10/Brain-Computer-Interfaces.jpeg');
     color: #002A32;
 }
 
@@ -14,11 +15,13 @@ container {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-height: 50vh;
+    padding: 20px;
     max-width: 600px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #F9F8F8;
+    /* background-color: #F9F8F8; */
 }
 
 nav {
@@ -58,12 +61,38 @@ nav ul li a {
     font-size: 16px;
 }
 
+#landing_page header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    /* max-height: 100vh; */
+    padding: 20px;
+    background-color: #F9F8F8;
+    border-radius: 25px;
+}
+
 #landing_page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
     padding: 20px;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+section1 {
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    max-height: 100vh;
+    background-color: #F9F8F8;
 }
