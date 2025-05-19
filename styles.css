@@ -1,98 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* background-color: #CDD3CE; */
-    background-image: url('https://www.collegenp.com/uploads/2023/10/Brain-Computer-Interfaces.jpeg');
+    margin: 0;
+    font-family: Arial, sans-serif;
     color: #002A32;
+    background-color: #002A32;
 }
 
-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-height: 50vh;
-    padding: 20px;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* background-color: #F9F8F8; */
-}
-
+/* Navigation Bar */
 nav {
-    display: flex;
     position: fixed;
-    justify-content: center;
     top: 0;
     width: 100%;
-    background-color: #002A32;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #00000070;
     padding: 10px 0;
-    align-items: center;
+    z-index: 1000;
 }
+
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    text-decoration: none;
-    max-width: 600px;
-    align-items: center;
-
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-nav ul li{
+
+nav ul li {
     padding: 10px 20px;
-    color: #F9F8F8;
-    text-decoration: none;
-    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5px 15px 5px 15px;
 }
 
 nav ul li a {
     color: #F9F8F8;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s;
 }
 
-#landing_page header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 20rem;
-    /* max-height: 100vh; */
-    padding: 20px;
-    background-color: #F9F8F8;
-    border-radius: 25px;
+nav ul li:hover {
+    background-color: #002A32;
+    border-radius: 5px;
+    transition: 0.3s;
+    transform: translateY(-2px);
 }
 
+/* Landing Page */
 #landing_page {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #F9F8F8;
     text-align: center;
     padding: 20px;
-    height: 100vh;
-    max-height: 100vh;
+    box-sizing: border-box;
 }
 
-section1 {
-    display:flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    height: auto;
-    max-height: 100vh;
+#landing_page header h1 {
+    margin-bottom: 20px;
+}
+
+/* Learn More Button */
+.learn_more {
+    background-color: #002A32;
+    color: #F9F8F8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.learn_more:hover {
+    background-color: #004c57;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* About Section */
+#about_section {
+    min-height: 100vh;
+    padding: 50px 20px;
     background-color: #F9F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_section main {
+    max-width: 600px;
+    text-align: center;
 }
