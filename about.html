@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Brain-Computer Interfaces</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">What are BCI's?</a></li>
+        <li><a href="contact.html">How they help.</a></li>
+        <li><a href="blog.html">References</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleNav(this)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">What are BCI's?</a>
+        <a href="contact.html">How they help.</a>
+        <a href="blog.html">References</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero Section -->
+  <section class="about-hero-section">
+    <div class="about-hero-content">
+      <h1>What Are Brain-Computer Interfaces?</h1>
+      <p>
+        Brain-Computer Interfaces (BCIs) are systems that allow the human brain to communicate directly with computers or external devices without the use of muscles. These technologies interpret brain activity using sensors and algorithms to perform actions such as controlling prosthetics, typing, or moving cursors.
+      </p>
+      <a href="#benefits_section" class="btn-primary">Why Are BCIs Important?</a>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits_section" class="about-section-card">
+    <div class="about-section-content">
+      <h2>Why Are BCIs Important?</h2>
+      <p>
+        BCIs are particularly valuable for individuals with disabilities, offering new ways to interact with the world using only neural activity. They represent the cutting edge of neuroscience and computing, with the potential to revolutionize medicine, accessibility, and human potential.
+      </p>
+      <a href="#future_section" class="btn-secondary">The Future of BCIs</a>
+    </div>
+  </section>
+
+  <!-- Future Section -->
+  <section id="future_section" class="about-section-card">
+    <div class="about-section-content">
+      <h2>The Future of BCIs</h2>
+      <p>
+        As research progresses, BCIs may improve learning, productivity, and even allow for new types of human-machine creativity and collaboration. The future of BCIs is bright, with possibilities limited only by our imagination.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleNav(x) {
+      x.classList.toggle("change");
+      const overlay = document.getElementById("myNav");
+      overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
+    }
+  </script>
+</body>
+</html>

@@ -3,33 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css" />
   <title>Brain-Computer Interfaces</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">What are BCI's?</a></li>
         <li><a href="contact.html">How they help.</a></li>
         <li><a href="blog.html">References</a></li>
       </ul>
-
-      <!-- Hamburger Icon (Mobile) -->
       <div class="hamburger" onclick="toggleNav(this)">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
     </div>
-
-    <!-- Overlay Navigation (Mobile) -->
     <div id="myNav" class="overlay">
       <div class="overlay-content">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">What are BCI's?</a>
         <a href="contact.html">How they help.</a>
         <a href="blog.html">References</a>
@@ -37,40 +33,39 @@
     </div>
   </nav>
 
-  <!-- Landing Section -->
-  <section id="landing_page">
-    <header>
-      <h1>Technology and Humanity: Brain-Computer Interfaces</h1>
-    </header>
-    <a href="#about_section" class="learn_more">Learn More</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Brain-Computer Interfaces</h1>
+      <p>Connecting minds and machines for a smarter, more accessible future.</p>
+      <a href="#about_section" class="btn-primary">Learn More</a>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about_section">
-    <main>
+  <section id="about_section" class="info-section">
+    <div class="info-content">
+      <h2>What are BCIs?</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi cupiditate molestias saepe, necessitatibus enim natus pariatur accusantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod doloribus facere esse delectus ducimus! Dicta quae ullam ipsum quia cupiditate voluptatibus est cum doloribus ex unde, laboriosam, perspiciatis commodi!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa magnam at repellat deleniti nihil soluta nobis quae culpa necessitatibus harum rem veniam inventore iusto, temporibus quasi. Repellat odio quidem dolores.
+        Brain-Computer Interfaces (BCIs) enable direct communication between the brain and external devices. They are transforming medicine, accessibility, and the way we interact with technology.
       </p>
-      <a class="scroll" href="#gallery_section"><i class="arrow down"></i></a>
-    </main>
+      <a href="#gallery_section" class="btn-secondary">See Gallery</a>
+    </div>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery_section">
-    <main>
+  <section id="gallery_section" class="gallery-section">
+    <div class="gallery-content">
       <h2>Gallery</h2>
-      <div class="gallery">
+      <div class="gallery-grid">
         <img src="image/image1.jpeg" alt="Image 1" />
         <img src="image/image2.jpeg" alt="Image 2" />
         <img src="image/image3.jpeg" alt="Image 3" />
         <img src="image/image4.jpg" alt="Image 4" />
       </div>
-    </main>
+    </div>
   </section>
 
-  <!-- JavaScript -->
   <script>
     function toggleNav(x) {
       x.classList.toggle("change");
@@ -78,6 +73,5 @@
       overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
     }
   </script>
-
 </body>
 </html>

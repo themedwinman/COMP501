@@ -1,0 +1,117 @@
+/* Hero Section */
+.about-hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #005e6a;
+  animation: fadeIn 1s;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+.about-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-hero-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+}
+.about-hero-content p {
+  font-size: 1.25rem;
+  color: #999;
+  margin-bottom: 2.2rem;
+}
+
+/* Section Card */
+.about-section-card {
+  background: #fff;
+  min-height: 100vh;
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1s;
+}
+.about-section-content {
+  max-width: 700px;
+  text-align: center;
+}
+.about-section-content h2 {
+  font-size: 2.2rem;
+  color: #007a8a;
+  margin-bottom: 1.2rem;
+}
+.about-section-content p {
+  color: #444;
+  font-size: 1.18rem;
+  margin-bottom: 2rem;
+}
+
+#future_section {
+  background: #e6f3f7; /* Slightly darker, soft blue-teal */
+  padding: 90px 0;
+  animation: fadeInUp 1.2s;
+}
+
+/* Buttons (reuse home.css style if present) */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,122,138,0.08);
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: #e3f6f8;
+  color: #005e6a;
+}
+.btn-primary:hover {
+  background: #bbb;
+  transform: translateY(-2px) scale(1.03);
+}
+.btn-secondary {
+  background: #e3f6f8;
+  color: #007a8a;
+}
+.btn-secondary:hover {
+  background: #c2e9ee;
+  color: #005e6a;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about-hero-content h1, .about-section-content h2 {
+    font-size: 1.5rem;
+  }
+  .about-section-card {
+    padding: 40px 0;
+  }
+  .about-hero-section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .about-hero-content, .about-section-content {
+    max-width: 98vw;
+  }
+}

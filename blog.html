@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>References</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">What are BCI's?</a></li>
+        <li><a href="contact.html">How they help.</a></li>
+        <li><a href="blog.html">References</a></li>
+      </ul>
+
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="hamburger" onclick="toggleNav(this)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Overlay Navigation (Mobile) -->
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">What are BCI's?</a>
+        <a href="contact.html">How they help.</a>
+        <a href="blog.html">References</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section id="about_section">
+    <main>
+      <h2>References and Further Reading</h2>
+      <ul style="text-align: left; color: #F9F8F8;">
+        <li>Wolpaw, J. R., & Wolpaw, E. W. (2012). <i>Brain–Computer Interfaces: Principles and Practice</i>. Oxford University Press.</li>
+        <li>Lebedev, M. A., & Nicolelis, M. A. (2006). Brain–machine interfaces: Past, present and future. <i>Trends in Neurosciences</i>.</li>
+        <li>IEEE Brain Initiative: <a href="https://brain.ieee.org" target="_blank" style="color:#A8E6FF;">https://brain.ieee.org</a></li>
+        <li>NIH BRAIN Initiative: <a href="https://braininitiative.nih.gov" target="_blank" style="color:#A8E6FF;">https://braininitiative.nih.gov</a></li>
+      </ul>
+    </main>
+  </section>
+
+  <script>
+    function toggleNav(x) {
+      x.classList.toggle("change");
+      const overlay = document.getElementById("myNav");
+      overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
+    }
+  </script>
+
+</body>
+</html>

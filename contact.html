@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>How They Help</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+ <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">What are BCI's?</a></li>
+        <li><a href="contact.html">How they help.</a></li>
+        <li><a href="blog.html">References</a></li>
+      </ul>
+
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="hamburger" onclick="toggleNav(this)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Overlay Navigation (Mobile) -->
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">What are BCI's?</a>
+        <a href="contact.html">How they help.</a>
+        <a href="blog.html">References</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <section id="gallery_section">
+    <main>
+      <h2>How Do BCIs Help?</h2>
+      <p>
+        Brain-Computer Interfaces can restore independence for individuals with mobility or communication impairments. 
+        For example, BCIs enable patients with ALS to type using only their thoughts or help quadriplegics control robotic limbs.
+      </p>
+      <p>
+        In mental health, BCIs are being studied as potential treatments for depression, PTSD, and anxiety by modulating neural activity. 
+        They're also being tested in virtual reality for therapeutic immersion.
+      </p>
+      <p>
+        As research progresses, BCIs may improve learning, productivity, and even allow for new types of human-machine creativity and collaboration.
+      </p>
+    </main>
+  </section>
+
+  <script>
+    function toggleNav(x) {
+      x.classList.toggle("change");
+      const overlay = document.getElementById("myNav");
+      overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
+    }
+  </script>
+
+</body>
+</html>
