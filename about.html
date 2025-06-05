@@ -33,43 +33,209 @@
     </div>
   </nav>
 
-  <!-- About Hero Section -->
-  <section class="about-hero-section">
+  <!-- Landing/Hero Section -->
+  <section class="about-hero-section" id="landing">
     <div class="about-hero-content">
       <h1>What Are Brain-Computer Interfaces?</h1>
       <p>
-        Brain-Computer Interfaces (BCIs) are systems that allow the human brain to communicate directly with computers or external devices without the use of muscles. These technologies interpret brain activity using sensors and algorithms to perform actions such as controlling prosthetics, typing, or moving cursors.
+        Discover the science and technology behind Brain-Computer Interfaces (BCIs). Learn how these groundbreaking devices connect the human mind to computers, enabling new possibilities for communication, control, and accessibility.
       </p>
-      <a href="#benefits_section" class="btn-primary">Why Are BCIs Important?</a>
+      <a href="#what_are_bcis" class="btn-primary" onclick="scrollToSection('what_are_bcis'); return false;">Start Exploring</a>
     </div>
   </section>
 
-  <!-- Benefits Section -->
+  <!-- Section 1: What Are BCIs & How Do They Work -->
+  <section id="what_are_bcis" class="about-section-card">
+    <div class="about-section-content">
+      <h2>What Are BCIs & How Do They Work?</h2>
+      <p>
+        What are these devices that let you move a cursor on a pc just by thinking about it? They are Brain computer interfaces. BCIs monitor our brain's electrical signals and process them into data, which it sends to the end device (laptop, etc.) to carry out the desired command.
+        <br><br>
+        To capture and read our brain's commands, non-invasive BCIs commonly use an electroencephalogram (EEG), which was first discovered by Hans Berger in the 1920s. This is where small electrodes (metal discs) are placed onto the scalp to detect the electric signals our brain gives off, with the BCI capturing this to transform the signals into a computer operation. There are other ways of reading our thoughts, like measuring the magnetic field that our brains give off, called Magnetoencephalography (MEG). Electrocorticography (ECoG) and Local Field Potentials (LFPs) are techniques where a BCI is implanted onto the brain's surface, some of which use Functional magnetic resonance imaging (FMRI) to measure the blood flow within the brain to help further understand the neuron signals.
+        <br><br>
+        With the human brain being the most complex organ in the human body, it’s amazing how far neuroscience has come, but for BCIs to work, they need to decode and interpret these incredibly complex brain signals. Recently, the use of machine learning has been employed to answer the question of how to read our brains. Of course, there are already algorithms made to decode neural data, such as convolutional neural networks (CNNS) or recurrent neural networks (RNNs which have). But with machine learning, the improvement that can and will be made in decoding and responding to our thoughts is significant.
+        <br><br>
+        The overall aim of many companies developing BCIs is to achieve medical feats and deepen our understanding of the human brain.
+        <br><br>
+        In the last 30 years, the studies and development of BCIs have proliferated with the modern understanding of neuroscience, biomedical engineering, and AI. With all these developments, the difficult task of decoding the brain’s signals and messages is becoming easier, making the fantasy of this tech is reality.
+        <br><br>
+        Brain Computer Interfaces (BCIs) are systems that enable direct communication between the human brain and external devices that read your passing brain signals to perform tasks. BCI’s whole task is detecting the brain’s electrical signals, interpreting them, sending its code of your thoughts to the connected device, letting it perform the user’s desired task. This is a basic run-down of how a BCI will perform its task.
+        <br><br>
+        Thoughts are made up of a process that happens within the brain involving neurons, electrical signals and chemical reactions, which can be read with an electroencephalogram (EEG) which was first discovered in 1924, now over one hundred years later we are developing Hans Bergers findings to explore the brain for medical and scientific research.
+        <br><br>
+        The concept of a BCI started in the 1970s on monkeys and using a crude EEG method, but as technology has grown, so has the desire to make this amazing piece of technology.
+        <br><br>
+        BCIs have been in development in today’s world for more than just the ability to turn a light switch on with a thought, but for the thousands of people they can support in recovery or enhance the communication of the paralysed/mute, a new age of entertainment and online accessibility. The positive change this technology could influence is almost endless.
+      </p>
+      <img src="image/1.jpg" alt="BCI supporting recovery and communication" style="max-width:340px; width:150%; margin: 18px auto 32px auto; display:block; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08);" />
+      <a href="#how_bcis_work" class="btn-primary" onclick="scrollToSection('how_bcis_work'); return false;">Next: How BCIs Work</a>
+    </div>
+  </section>
+
+  <!-- Section 2: How BCIs Work -->
+  <section id="how_bcis_work" class="about-section-card" style="background-color: #f0f0f0;">
+    <div class="about-section-content">
+      <h2>How BCIs Work</h2>
+      <p>
+        There are  currently 3 different types of BCIs
+      </p>
+      <ul style="max-width:500px; margin:0 auto; color: #333; text-align: center;">
+        <li>Invasive – devices in the cortex of the brain.</li>
+        <li>Non-invasive – devices that are placed on the scalp.</li>
+        <li>Hybrid or semi-invasive – in the cortex and on the scalp.</li>
+      </ul>
+      <p>
+        There are reports of over 20 companies working and actively testing invasive BCIs, the most well-known being Neuralink and Synchron, each doing their active testing on humans with paralysis or ALS (Amyotrophic Lateral Sclerosis). A study on BCIs for severe paralysis in four patients using the Stentrode Synchron BCI, a “16-electrode sensing device connected into the cortex of the brain,” was conducted.  Using platinum electrodes to record the pattern of the brain signals, the information given is translated from its neural state to signals of control to the given device. The study showed the amazing turnaround these patients experienced once they could operate computers telepathically.
+        <br><br>
+        The most well-known invasive BCI is Neuralink’s N1 Implant, known as “the link”. It was made to record neural activity through 1,024 electrodes distributed across 64 threads that are thinner than a human hair. So thin and flexible that a robot was made specifically to handle the surgery process to reliably insert the threads.
+        <br><br>
+        The robot tasked with handing the thread is the R1 robot. It guides the threads onto and near the neurons of interest, implanting them into the cortex of the brain. Once the N1 implant is installed, it will send signals to its partnering external devices, where commands to move a paddle to play “Pong” on a computer. Like all technology, a power source is needed for these devices to run, and with an onboard battery implanted into the user’s head, a wireless charger is needed to power this device.
+      </p>
+      <img src="image/3.png" alt="Neuralink R1 robot and N1 implant" style="max-width:500px; width:100%; margin: 18px auto 32px auto; display:block; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08);" />
+      <a href="#noninvasive_bcis" class="btn-primary" onclick="scrollToSection('noninvasive_bcis'); return false;">Next: Non-Invasive BCIs</a>
+    </div>
+  </section>
+
+  <!-- Section 2b: Non-Invasive BCIs -->
+  <section id="noninvasive_bcis" class="about-section-card" style="background-color: #f7fafc;">
+    <div class="about-section-content">
+      <h2>Non-Invasive BCIs</h2>
+      <p>
+        For non-invasive BCI devices, these can take forms like headbands or headphones - some even as full helmets. All these wearable devices operate on the same core principle as invasive BCIs, detecting electrical signals from the user's brain. While these headsets produce less precise results since they're not directly connected to brain tissue, they're finding practical applications in areas like virtual reality gaming and guiding robots to perform specialized tasks.
+        <br><br>
+        The field of BCI technology has expanded significantly in recent years. As noted in computational neuroscience literature, while most BCIs use EEG, some employ magnetoencephalography (MEG) to record the brain's magnetic activity with similar speed to EEG but measuring different signals. Other approaches, like fMRI and fNIRS, track blood flow changes rather than electrical activity directly. The BOLD signal specifically shows which brain areas become active through increased blood flow and oxygen use, such as during imagined movement. Alongside these medical applications, many companies are now developing non-invasive BCIs for entertainment purposes.
+        <br><br>
+        There are many more experiments being conducted using non-invasive BCIs as they are more cost-effective and safer compared to implanted BCIs. According to (Kaido Varbu et al. 2022), there were about 8-15 tests conducted per year between 2014 and 2016, with those numbers rising to 19-25 between 2017 and 2019.
+        <br><br>
+        EMOTIV and NEURABLE are releasing headphones with BCI and AI technology embedded within them, The NEURABLE MW75 Neuro headphones are made for everyday users, implementing EEG and AI technology to read the activity within the brain and send the recorded data to an app where you can see the activity levels happening within your brain. (CNN science)
+      </p>
+      <a href="#hybrid_bcis" class="btn-primary" onclick="scrollToSection('hybrid_bcis'); return false;">Next: Hybrid & Semi-Invasive BCIs</a>
+    </div>
+  </section>
+
+  <!-- Section 2c: Hybrid & Semi-Invasive BCIs -->
+  <section id="hybrid_bcis" class="about-section-card">
+    <div class="about-section-content">
+      <h2>Hybrid & Semi-Invasive BCIs</h2>
+      <p>
+        The other option of BCIs is the semi-invasive/hybrid version, a combination of connecting electrodes in the subdural or subcortical brain regions, offering a better connection than the non-invasive BCI devices and a safer BCI compared to its invasive counterparts. The Hybrid BCI aims to make the best of both versions with its fast connectivity, accuracy, and control with greater safety.
+        <br><br>
+        For some versions of Hybrid BCIs, a combination of brain signal and non-brain signal devices is used in tandem to gain greater results for user commands, such as a Neuronal device and an electromyography to help time and correct muscle movement between a practice limb.
+        <br>
+        (Hybrid-Brain)
+      </p>
+      <a href="#bci_conclusion" class="btn-primary" onclick="scrollToSection('bci_conclusion'); return false;">Next: Conclusion on How They Work</a>
+    </div>
+  </section>
+
+  <!-- Section 2d: Conclusion on How They Work -->
+  <section id="bci_conclusion" class="about-section-card" style="background-color: #f7fafc;">
+    <div class="about-section-content">
+      <h2>Conclusion: How BCIs Work</h2>
+      <p>
+        BCIs in there are many designs and applications to the brain are varying but the recording of brain activity, patterns and signals to translate into their language to execute the given code is the aim for all current BCIs. As technology grows and the understanding of the human brain expands, the level of BCIs will increase for all uses, those within the medical field, and those for everyday use.
+      </p>
+      <a href="#benefits_section" class="btn-primary" onclick="scrollToSection('benefits_section'); return false;">Next: Why Are BCIs Important?</a>
+    </div>
+  </section>
+
+  <!-- Section 3: Why Are BCIs Important? -->
   <section id="benefits_section" class="about-section-card">
     <div class="about-section-content">
       <h2>Why Are BCIs Important?</h2>
       <p>
         BCIs are particularly valuable for individuals with disabilities, offering new ways to interact with the world using only neural activity. They represent the cutting edge of neuroscience and computing, with the potential to revolutionize medicine, accessibility, and human potential.
       </p>
-      <a href="#future_section" class="btn-secondary">The Future of BCIs</a>
+      <a href="#future_section" class="btn-secondary" onclick="scrollToSection('future_section'); return false;">Next: The Future of BCIs</a>
     </div>
   </section>
 
-  <!-- Future Section -->
+  <!-- Section 4: The Future of BCIs -->
   <section id="future_section" class="about-section-card">
     <div class="about-section-content">
       <h2>The Future of BCIs</h2>
       <p>
         As research progresses, BCIs may improve learning, productivity, and even allow for new types of human-machine creativity and collaboration. The future of BCIs is bright, with possibilities limited only by our imagination.
       </p>
+      <a href="#how_bcis_can_help" class="btn-secondary">Next: How BCI's Help</a>
     </div>
   </section>
+
+  <!-- Section: How BCIs Can Help -->
+<section id="how_bcis_can_help" class="about-section-card" style="background-color: #f7fafc;">
+  <div class="about-section-content">
+    <h2>How BCIs Can Help</h2>
+    <p>
+      The World Health Organization reports that approximately 16% of the global population lives with some form of disability, ranging from motor impairments to communication challenges and mental health conditions. For many of these individuals, daily life is limited by their physical or neurological conditions. Brain-Computer Interfaces (BCIs) are emerging as a technology with the potential to restore independence, communication, and improve quality of life. BCIs can help enable movement in paralyzed individuals, support those recovering from head injury, and support mental health monitoring. BCIs are just having a computer in the user’s brain, but could allow access to a future alongside society.
+    </p>
+    <a href="#medical_applications" class="btn-primary" onclick="scrollToSection('medical_applications'); return false;">Next: Medical Applications</a>
+  </div>
+</section>
+
+<section id="medical_applications" class="about-section-card">
+  <div class="about-section-content">
+    <h2>Medical Applications</h2>
+    <p>
+      Brain-Computer Interfaces have the potential to revolutionize medicine and rehabilitation, especially for individuals living with serious physical or neurological conditions. By reading brain activity and translating it into data that can be read by doctors to understand their patients. BCIs create new ways for patients to interact with their surroundings and society. These systems can perform tasks based on neural signals the BCIs read for further exploration of the human brain and mental illness, or hidden illnesses not yet discovered. The information gathered not only supports immediate medical needs but also contributes to long-term research, helping us explore the brain more deeply and develop more effective treatments for born or acquired disabilities.
+    </p>
+    <a href="#locked_in" class="btn-primary" onclick="scrollToSection('paralysis_motor'); return false;">Communication with Locked-In Patients</a>
+  </div>
+</section>
+
+<section id="locked_in" class="about-section-card">
+  <div class="about-section-content">
+    <h2>Communication for Locked-In Patients</h2>
+    <p>
+      For those with conditions like locked-in syndrome or advanced ALS, BCIs are one of the only ways to communicate. A two-year study conducted at the Wyss Centre for Bio and Neuron Engineering in Geneva, Switzerland, demonstrated that a man with advanced amyotrophic lateral sclerosis, who was completely locked-in and nonverbal, was able to communicate using an implanted BCI system. This achievement not only answered long-standing questions about the potential for communication in individuals with complete paralysis but also opened the door to new possibilities for those living with severe neurological conditions.
+      <br><br>
+      Through focused thought, users can select letters or words on a digital keyboard, providing a vital connection to the world around them.
+    </p>
+    <a href="#mental_health" class="btn-primary" onclick="scrollToSection('epilepsy'); return false;">Next: Mental Health Monitoring</a>
+  </div>
+</section>
+
+<section id="mental_health" class="about-section-card">
+  <div class="about-section-content">
+    <h2>Mental Health and Emotional Monitoring</h2>
+    <p>
+      As we stated, BCIs can record and track data from the user’s brain. Some BCIs are being developed to assist in therapy by monitoring brain activity linked to anxiety, focus, or mood. These systems could eventually help regulate emotional responses through feedback or targeted stimulation. This can help diagnose and support people with mental illnesses and explore in depth the greater understanding of these illnesses.
+    </p>
+    <a href="#stroke_recovery" class="btn-primary" onclick="scrollToSection('stroke_recovery'); return false;">Next: Stroke Recovery and Rehabilitation</a>
+  </div>
+</section>
+
+<section id="stroke_recovery" class="about-section-card" style="background-color: #f7fafc;">
+  <div class="about-section-content">
+    <h2>Stroke Recovery and Rehabilitation</h2>
+    <p>
+      In New Zealand, Stroke Aotearoa recorded that 1 in 4 Kiwis over the age of 25 will suffer a stroke, with the ones that survive likely having motor dysfunctions such as speech impairments, etc. The World Stroke Organization's fact sheet from 2022 released a graph of the daily mortality and disability of all stroke types.
+      <br><br>
+      BCIs are actively tested in stroke therapy to help patients regain lost motor functions. When a person imagines moving or talking, a BCI can detect that signal a help the brain rebuild motor pathways to improve speech or mobility.
+    </p>
+    <a href="#medical_conclusion" class="btn-primary" onclick="scrollToSection('medical_conclusion'); return false;">Next: Medical Field Conclusion</a>
+  </div>
+</section>
+
+<section id="medical_conclusion" class="about-section-card">
+  <div class="about-section-content">
+    <h2>Conclusion within the Medical Field</h2>
+    <p>
+      Brain-Computer Interfaces can be lifelines for people to restart life or even start. It will be a new age of treatment and understanding the human body in real time, a new way to understand illness and disabilities, with a new path for treatment and recovery, reshaping what is possible.
+      <br><br>
+      As this technology continues to evolve, so should our understanding; it can with more than what we just listed. It can help us understand the effect of drugs, addiction, and life, what this could do for our understanding of us as humans, and different ways we think, answers will be given, and lives made new.
+    </p>
+    <a href="#landing" class="btn-primary" onclick="scrollToSection('daily_life'); return false;">Back to Top</a>
+  </div>
+</section>
 
   <script>
     function toggleNav(x) {
       x.classList.toggle("change");
       const overlay = document.getElementById("myNav");
       overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
+    }
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>

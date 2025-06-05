@@ -292,7 +292,7 @@ p {
   text-align: center;
 }
 #about_section p {
-  color: #F9F8F8;
+  color: #000;
 }
 #about_section main {
   max-width: 600px;
@@ -371,6 +371,11 @@ section > h2 {
   text-align: center;
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(0,44,60,0.12);
+}
+
+.active {
+  color: #00bcd4;
+  font-weight: bold;
 }
 
 /* Card style for content blocks */

@@ -3,11 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>References | Brain-Computer Interfaces</title>
   <link rel="stylesheet" href="styles.css" />
-  <title>References</title>
+  <style>
+    body {
+      background: #f7fafc;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .references-container {
+      max-width: 850px;
+      margin: 60px auto 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,44,60,0.08);
+      padding: 40px 32px;
+    }
+    h1 {
+      color: #007a8a;
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 2.2rem;
+    }
+    ul.references-list {
+      list-style: none;
+      padding: 0;
+    }
+    ul.references-list li {
+      margin-bottom: 22px;
+      font-size: 1.08rem;
+      line-height: 1.6;
+      border-left: 4px solid #00bcd4;
+      padding-left: 14px;
+      background: #f0f7fa;
+      border-radius: 6px;
+      word-break: break-word;
+    }
+    ul.references-list a {
+      color: #007a8a;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .references-container {
+        padding: 20px 8px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
@@ -15,48 +63,76 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What are BCI's?</a></li>
         <li><a href="contact.html">How they help.</a></li>
-        <li><a href="blog.html">References</a></li>
+        <li><a href="blog.html" class="active">References</a></li>
       </ul>
-
-      <!-- Hamburger Icon (Mobile) -->
-      <div class="hamburger" onclick="toggleNav(this)">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-
-    <!-- Overlay Navigation (Mobile) -->
-    <div id="myNav" class="overlay">
-      <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="about.html">What are BCI's?</a>
-        <a href="contact.html">How they help.</a>
-        <a href="blog.html">References</a>
-      </div>
     </div>
   </nav>
 
   <!-- Main Content -->
-  <section id="about_section">
-    <main>
-      <h2>References and Further Reading</h2>
-      <ul style="text-align: left; color: #F9F8F8;">
-        <li>Wolpaw, J. R., & Wolpaw, E. W. (2012). <i>Brain–Computer Interfaces: Principles and Practice</i>. Oxford University Press.</li>
-        <li>Lebedev, M. A., & Nicolelis, M. A. (2006). Brain–machine interfaces: Past, present and future. <i>Trends in Neurosciences</i>.</li>
-        <li>IEEE Brain Initiative: <a href="https://brain.ieee.org" target="_blank" style="color:#A8E6FF;">https://brain.ieee.org</a></li>
-        <li>NIH BRAIN Initiative: <a href="https://braininitiative.nih.gov" target="_blank" style="color:#A8E6FF;">https://braininitiative.nih.gov</a></li>
-      </ul>
-    </main>
-  </section>
-
-  <script>
-    function toggleNav(x) {
-      x.classList.toggle("change");
-      const overlay = document.getElementById("myNav");
-      overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
-    }
-  </script>
-
+  <div class="references-container">
+    <h1>References</h1>
+    <ul class="references-list">
+      <li>
+        Peter Mitchell, Sarah C. M. Lee, Peter E. Yoo, et al (09 January 2023) Assessment of Safety of a Fully Implanted Endovascular Brain-Computer Interface for Severe Paralysis in 4 The Stentrode With Thought-Controlled Digital Switch (SWITCH) Study<br>
+        From: <a href="https://jamanetwork.com/journals/jamaneurology/fullarticle/2799839" target="_blank">https://jamanetwork.com/journals/jamaneurology/fullarticle/2799839</a>
+      </li>
+      <li>
+        Neuralink (12 April 2024) Prime Study Progress Update.<br>
+        From: <a href="https://neuralink.com/blog/prime-study-progress-update/" target="_blank">https://neuralink.com/blog/prime-study-progress-update/</a>
+      </li>
+      <li>
+        Brendan Z. Allison & Deam Krusienski (01 January 2014) Noninvasive Brain-Computer Interfaces.<br>
+        From: <a href="https://link.springer.com/rwe/10.1007/978-1-4614-7320-6_707-1" target="_blank">https://link.springer.com/rwe/10.1007/978-1-4614-7320-6_707-1</a>
+      </li>
+      <li>
+        Rebecca Cairns, (19 September 2024) BCI & AI headphones.<br>
+        From: <a href="https://edition.cnn.com/science/brain-reading-headphones-bci-neurable-hnk-spc/index.html?utm_medium=newsroom" target="_blank">https://edition.cnn.com/science/brain-reading-headphones-bci-neurable-hnk-spc/index.html?utm_medium=newsroom</a>
+      </li>
+      <li>
+        Keum-Shik Hong & Muhammad Jawad Khan, (24 July 2017) Hybrid Brain Computer Interface Techniques for improved classification Accuracy and increased number of commands: A review.<br>
+        From: <a href="https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2017.00035/full" target="_blank">https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2017.00035/full</a>
+      </li>
+      <li>
+        World health organisation (07 March 2023) Disability.<br>
+        From: <a href="https://www.who.int/news-room/fact-sheets/detail/disability-and-health" target="_blank">https://www.who.int/news-room/fact-sheets/detail/disability-and-health</a>
+      </li>
+      <li>
+        World health organisation (16 April 2024) Spinal cord Injury.<br>
+        From: <a href="https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury" target="_blank">https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury</a>
+      </li>
+      <li>
+        Wyss Centre, a completely locked-in man, uses a brain-computer interface to communicate.<br>
+        From: <a href="https://wysscenter.ch/update/completely-locked-in-man-uses-brain-computer-interface-to-communicate/" target="_blank">https://wysscenter.ch/update/completely-locked-in-man-uses-brain-computer-interface-to-communicate/</a>
+      </li>
+      <li>
+        Stroke Aotearoa NZ, Stroke Statistics & data.<br>
+        From: <a href="https://www.stroke.org.nz/understanding-stroke/statistics-data/" target="_blank">https://www.stroke.org.nz/understanding-stroke/statistics-data/</a>
+      </li>
+      <li>
+        The World Stroke Organization fact sheet (2022), Mortality and Disability-Adjusted Life Years (DALYs) for all Stroke Types Combined.<br>
+        From: <a href="https://www.world-stroke.org/assets/downloads/WSO_Global_Stroke_Fact_Sheet.pdf" target="_blank">https://www.world-stroke.org/assets/downloads/WSO_Global_Stroke_Fact_Sheet.pdf</a>
+      </li>
+      <li>
+        Stroke Foundation of New Zealand. (2022). Stroke Statistics and Data.<br>
+        From: <a href="https://www.stroke.org.nz/understanding-stroke/statistics-data" target="_blank">https://www.stroke.org.nz/understanding-stroke/statistics-data</a>
+      </li>
+      <li>
+        Willett, F.R., Avansino, D.T., Hochberg, L.R. et al. (2021) High-performance brain-to-text communication via handwriting.<br>
+        From: <a href="https://www.nature.com/articles/s41586-021-03506-2#citeas" target="_blank">https://www.nature.com/articles/s41586-021-03506-2#citeas</a>
+      </li>
+      <li>
+        Medical Xpress. (2023, December 18). How brain implants lose functionality over time and how to prevent it.<br>
+        From: <a href="https://medicalxpress.com/news/2023-12-brain-implants-functionality.html" target="_blank">https://medicalxpress.com/news/2023-12-brain-implants-functionality.html</a>
+      </li>
+      <li>
+        Elhai, J. D., Dvorak, R. D., Levine, J. C., & Hall, B. J. (2017). Problematic smartphone use: A conceptual overview and systematic review of relations with anxiety and depression psychopathology. Journal of Affective Disorders, 207, 251–259.<br>
+        From: <a href="https://doi.org/10.1016/j.jad.2016.08.030" target="_blank">https://doi.org/10.1016/j.jad.2016.08.030</a>
+      </li>
+      <li>
+        Emma C. Gordon, Anil K. Seth (28 October 2024) Ethical considerations for the use of brain–computer interfaces for cognitive enhancement.<br>
+        From: <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002899" target="_blank">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002899</a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>

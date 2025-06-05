@@ -3,9 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How They Help</title>
+  <title>How BCIs Help</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="contact.css" />
+  <style>
+    .contact-hero-section {
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #007a8a 0%, #00bcd4 100%);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 30px 20px;
+    }
+    .contact-hero-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .contact-hero-section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .usecase-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      margin: 40px auto 0 auto;
+      max-width: 1200px;
+      padding: 0 16px;
+    }
+    .usecase-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,44,60,0.08);
+      padding: 32px 28px;
+      flex: 1 1 340px;
+      min-width: 320px;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .usecase-card h2 {
+      color: #007a8a;
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+      font-weight: 700;
+    }
+    .usecase-card p {
+      color: #333;
+      font-size: 1.05rem;
+      margin-bottom: 0;
+    }
+    @media (max-width: 900px) {
+      .usecase-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .usecase-card {
+        max-width: 98vw;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -33,114 +97,137 @@
     </div>
   </nav>
 
-  <!-- Section 1: Hero -->
-  <section class="hero-section full-section" id="section1">
+  <!-- Hero/Intro Section -->
+  <section class="contact-hero-section">
     <div>
-      <h1>How Do BCIs Help?</h1>
-      <p>Empowering independence, health, and creativity through technology.</p>
-      <button class="scroll-btn" onclick="scrollToSection('section2')">Learn More</button>
-    </div>
-  </section>
-
-  <!-- Section 2: Introduction -->
-  <section class="info-section full-section section-blue" id="section2">
-    <div class="info-content">
-      <h2>Introduction to BCIs</h2>
-      <div class="img-placeholder">
-        <img src="https://via.placeholder.com/350x180?text=Your+Image+Here" alt="BCI Example" />
-      </div>
+      <h1>How BCIs Can Help</h1>
       <p>
-        Brain-Computer Interfaces (BCIs) are systems that allow direct communication between the brain and external devices. They have the potential to revolutionize healthcare, accessibility, and human-computer interaction. 
-        <br><br>
-        BCIs work by detecting brain signals, interpreting them, and translating them into commands that can control computers, prosthetics, or other devices. This technology is still evolving, but its impact is already being felt in many fields.
+        The World Health Organization reports that approximately 16% of the global population lives with some form of disability, ranging from motor impairments to communication challenges and mental health conditions. For many of these individuals, daily life is limited by their physical or neurological conditions. Brain-Computer Interfaces (BCIs) are emerging as a technology with the potential to restore independence, communication, and improve quality of life. BCIs can help enable movement in paralyzed individuals, support those recovering from head injury, and support mental health monitoring. BCIs are just having a computer in the user’s brain, but could allow access to a future alongside society.
       </p>
-      <button class="scroll-btn" onclick="scrollToSection('section3')">Next</button>
     </div>
   </section>
 
-  <!-- Section 3: Applications -->
-  <section class="info-section full-section section-grey" id="section3">
-    <div class="info-content">
-      <h2>Applications of BCIs</h2>
-      <div class="img-placeholder">
-        <img src="https://via.placeholder.com/350x180?text=Application+Image" alt="BCI Application" />
-      </div>
+  <!-- Use Case Cards -->
+  <div class="usecase-cards">
+    <div class="usecase-card">
+      <h2>Medical Applications</h2>
       <p>
-        BCIs are being used to help people with disabilities regain independence. For example, individuals with paralysis can use BCIs to control robotic arms or communicate through text-to-speech systems. 
-        <br><br>
-        In medicine, BCIs are being explored for neurorehabilitation, pain management, and even as tools for diagnosing neurological disorders. The possibilities are expanding as research continues.
+        Brain-Computer Interfaces have the potential to revolutionize medicine and rehabilitation, especially for individuals living with serious physical or neurological conditions. By reading brain activity and translating it into data that can be read by doctors to understand their patients. BCIs create new ways for patients to interact with their surroundings and society. These systems can perform tasks based on neural signals the BCIs read for further exploration of the human brain and mental illness, or hidden illnesses not yet discovered. The information gathered not only supports immediate medical needs but also contributes to long-term research, helping us explore the brain more deeply and develop more effective treatments for born or acquired disabilities.
       </p>
-      <button class="scroll-btn" onclick="scrollToSection('section4')">Next</button>
     </div>
-  </section>
-
-  <!-- Section 4: Challenges -->
-  <section class="info-section full-section section-white" id="section4">
-    <div class="info-content">
-      <h2>Challenges and Considerations</h2>
-      <div class="img-placeholder">
-        <img src="https://via.placeholder.com/350x180?text=Challenge+Image" alt="BCI Challenges" />
-      </div>
+    <div class="usecase-card">
+      <h2>Paralysis and Motor Impairment</h2>
       <p>
-        Despite their promise, BCIs face several challenges. Technical hurdles include improving signal accuracy, reducing invasiveness, and ensuring long-term reliability. 
-        <br><br>
-        Ethical and privacy concerns are also important. As BCIs become more advanced, questions about data security, consent, and the potential for misuse must be addressed.
+        BCIs can be used to help users with paralysis or severe motor impairments interact with technologies such as typing on a keyboard. The World Health Organisation states that in 2021, over 15 million people had spinal cord injuries such as paralysis, ALS, or severe motor disorders, but with the use of BCIs, they can regain interaction with the world. These systems enable users to operate wheelchairs, communicate through speech software, or control prosthetics using thought alone.
       </p>
-      <button class="scroll-btn" onclick="scrollToSection('section5')">Next</button>
     </div>
-  </section>
-
-  <!-- Section 5: Future Directions -->
-  <section class="info-section full-section section-blue" id="section5">
-    <div class="info-content">
-      <h2>The Future of BCIs</h2>
-      <div class="img-placeholder">
-        <img src="https://via.placeholder.com/350x180?text=Future+Image" alt="BCI Future" />
-      </div>
+    <div class="usecase-card">
+      <h2>Communication for Locked-In Patients</h2>
       <p>
-        The future of BCIs is bright. As technology advances, we can expect more seamless integration with everyday devices, improved accessibility, and new forms of communication and creativity.
+        For those with conditions like locked-in syndrome or advanced ALS, BCIs are one of the only ways to communicate. A two-year study conducted at the Wyss Centre for Bio and Neuron Engineering in Geneva, Switzerland, demonstrated that a man with advanced amyotrophic lateral sclerosis, who was completely locked-in and nonverbal, was able to communicate using an implanted BCI system. This achievement not only answered long-standing questions about the potential for communication in individuals with complete paralysis but also opened the door to new possibilities for those living with severe neurological conditions.
         <br><br>
-        Researchers are exploring non-invasive BCIs, brain-to-brain communication, and even ways to enhance cognitive abilities. The coming years will likely see BCIs become a common part of our digital lives.
+        Through focused thought, users can select letters or words on a digital keyboard, providing a vital connection to the world around them.
       </p>
-      <button class="scroll-btn" onclick="scrollToSection('section6')">Contact Us</button>
     </div>
-  </section>
+    <div class="usecase-card">
+      <h2>Epilepsy Monitoring and Seizure Prevention</h2>
+      <p>
+        With BCI technologies being able to track and record the user's brain patterns and normal functions, it will become a reliable method of understanding seizures and can help with pre-emptive warning before they strike.
+        <br><br>
+        The current use of EEG technologies is being used on drug-resistant epilepsy patients to record what happens within their brain while on the medication, but what are the everyday updates, and the scope of the data has increased significantly.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Mental Health and Emotional Monitoring</h2>
+      <p>
+        As we stated, BCIs can record and track data from the user’s brain. Some BCIs are being developed to assist in therapy by monitoring brain activity linked to anxiety, focus, or mood. These systems could eventually help regulate emotional responses through feedback or targeted stimulation. This can help diagnose and support people with mental illnesses and explore in depth the greater understanding of these illnesses.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Stroke Recovery and Rehabilitation</h2>
+      <p>
+        In New Zealand, Stroke Aotearoa recorded that 1 in 4 Kiwis over the age of 25 will suffer a stroke, with the ones that survive likely having motor dysfunctions such as speech impairments, etc. The World Stroke Organization's fact sheet from 2022 released a graph of the daily mortality and disability of all stroke types.
+        <br><br>
+        BCIs are actively tested in stroke therapy to help patients regain lost motor functions. When a person imagines moving or talking, a BCI can detect that signal a help the brain rebuild motor pathways to improve speech or mobility.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Conclusion within the Medical Field</h2>
+      <p>
+        Brain-Computer Interfaces can be lifelines for people to restart life or even start. It will be a new age of treatment and understanding the human body in real time, a new way to understand illness and disabilities, with a new path for treatment and recovery, reshaping what is possible.
+        <br><br>
+        As this technology continues to evolve, so should our understanding; it can with more than what we just listed. It can help us understand the effect of drugs, addiction, and life, what this could do for our understanding of us as humans, and different ways we think, answers will be given, and lives made new.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Independence at Home</h2>
+      <p>
+        The use of BCI for everyday users is not yet a reality, but the thought and expectations are there, using a connected interface for home appliances such as the TV or lights. This will not only be helpful for disabled users with everyday tasks, but a person with Parkinson’s is also unable to change the channel on their TV, and can think about doing so, and it will happen. Devices today are already almost all connected, so it’s not impossible for this BCI and home interfaces.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Faster Communication</h2>
+      <p>
+        Every day tasks can be sped but instead of the delay and errors our hand makes when typing, a direct input from your head of what you want can be input. A trial where users with BCIs were asked to write, a speed of 90 characters per minute was achieved. This will only advance with the development of DCIs and the understanding of what happens within the human brain.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Entertainment & Gaming</h2>
+      <p>
+        There is already entertainment being made with BCIs in mind, some companies making games for BCIs others making games compatible with BCIs, the input of the brain to move the hand is 0.2-0.4 seconds and then for that to move into the game can be removed, straight from a thought into a action within the game.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Social & Digital Interaction</h2>
+      <p>
+        While BCI develops, the use of social media and other platforms or devices that interact with them will appear. A future of technology that is in our head, controlled by our thoughts, is not unrealistic; it's possible.
+      </p>
+    </div>
+    <div class="usecase-card">
+      <h2>Future Possibilities</h2>
+      <p>
+        BCIs are just having a computer in the user’s brain, but could allow access to a future alongside society.
+      </p>
+    </div>
+  </div>
 
-  <!-- Section 6: Contact Form -->
-  <section class="contact-form-section full-section" id="section6">
+  <!-- Risks of BCIs Section -->
+  <section class="contact-hero-section" style="background: linear-gradient(90deg, #b71c1c 0%, #f44336 100%); margin-top: 40px;">
     <div>
-      <h2>Contact Us</h2>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..." required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email..." required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
-        </div>
-        <button type="submit" class="scroll-btn" style="width:100%;">Send Message</button>
-      </form>
-      <button class="scroll-btn" style="margin-top:2rem;" onclick="scrollToSection('section1')">Back to Top</button>
+      <h1>Risks of BCIs</h1>
+      <p>
+        Brain Computer interfaces may seem like the grand entrance to a whole new era of sci-fi technology, but in some cases, it’s far from it. There are many different risk factors involved with using BCIs, alongside adverse side effects that no one seems to be mentioning. The most obvious risks are surgical complications mid or post operation, especially when it comes to invasive BCIs such as the implant being developed at Neuralink. Another factor that needs to be considered is the body’s response to the implant. According to (Medical Xpress, 2023), “If a hard metallic or plastic device is implanted into the soft tissue of the brain, these small, normal movements can lead to friction and inflammation of the tissues around the implant, killing off vital brain cells and causing scarring.” This source offers insight into the damage the implant might be causing patients. It is essential to note that animal trials were conducted before human trials to confirm the safety of the initial surgery. However, long-term (10+ years) complications or side effects have not been studied or observed, as BCIs have not been in use for that long.
+        <br><br>
+        BCIs don’t just carry physical/surgical risk either. Alongside the obvious physical health concerns, there could be unforeseen psychological and emotional factors playing roles in a patient’s well-being. Some of the most notable being the loss of mental autonomy and an emerging over-reliance on technology. Users of an implanted BCI may feel like their thoughts are no longer private or even within their control. This is more prominent in “closed-loop” BCIs, which can both read and stimulate neuron activity. We live in an era where smartphone use is at an all-time high, and according to Elhai et al. (2017), “Excessive smartphone use is associated with increased perceived stress, poor sleep, and lower psychological well-being.” When we consider that BCIs can mimic the effects of smartphones while directly injecting their controls into the brain, losing the barrier of a physical input, we could imagine that there might be adverse psychological effects. These could include, but are not limited to, cognitive overload and mental fatigue, overreliance on the BCI, and other unintended consequences such as mood swings and anxiety. Due to the intense concentration required to effectively use a BCI, to someone who has not used one before, it can take a lot of effort and often lead to periods of significant mental fatigue and distress.
+        <br><br>
+        While there are many unknown risk factors that come along with Brain-Computer Interfaces, there are an overwhelming number of positives within medicine, consumer entertainment, and scientific research.
+      </p>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Brain-Computer Interfaces. All rights reserved.</p>
-  </footer>
+  <!-- The Future of BCIs Section -->
+  <section class="contact-hero-section" style="background: linear-gradient(90deg, #374151 0%, #6366f1 100%); margin-top: 40px;">
+    <div>
+      <h1>The Future of BCIs</h1>
+      <p>
+        As the Brain-Computer Interface industry expands, so too do the ethical and philosophical questions surrounding its use. One of the concerns is the potential for BCIs to deepen existing social inequalities. A story by Emma C. Gordon, Anil K. Seth: “Could giving financially privileged individuals access to BCIs further widen existing socioeconomic gaps by providing them an additional cognitive or intellectual advantage? “The question of whether giving financially privileged individuals access to BCIs could further widen socioeconomic gaps by providing them with additional cognitive or intellectual advantages. The pressing issue of this amazing piece of technology being used to grant personal gain in the eyes of profit is not something to be ignored.
+        <br><br>
+        If we look at BCI from a view of philosophical perspective, will people be welcoming to a device in their heads that can record their very actions and personal data, will they trust its level of privacy, the thought of brain hacking, or will Neuron privacy be raised?
+        <br><br>
+        Would people who have it be looked down upon as lesser humans, and we are approaching the corner of what point does a human become more machine? Can we be seen as moving away from God's creation? We this technology be welcomed by the public?
+        <br><br>
+        Or will BCI gain greater traction than expected and have greater commands in the future, will they have whole new features that will replace our current daily items, such as keyboards or even phones, what if we could call someone from our BCI implant, a crude telepathy?
+        <br><br>
+        Many people are optimistic, who it can help is many, the money to be made is unmissable, but the risk and problems that will arise are undoubtedly there. The future of BCI is uncertain in many ways, but every person has a choice to make about Brain Computer Interfaces.
+      </p>
+    </div>
+  </section>
 
   <script>
     function toggleNav(x) {
       x.classList.toggle("change");
       const overlay = document.getElementById("myNav");
       overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
-    }
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>
