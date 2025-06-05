@@ -3,56 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css" />
   <title>How They Help</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-
   <!-- Navigation -->
- <nav>
+  <nav>
     <div class="nav-container">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What are BCI's?</a></li>
-        <li><a href="contact.html">How they help.</a></li>
+        <li><a href="contact.html" class="active">How they help.</a></li>
         <li><a href="blog.html">References</a></li>
       </ul>
-
-      <!-- Hamburger Icon (Mobile) -->
       <div class="hamburger" onclick="toggleNav(this)">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
     </div>
-
-    <!-- Overlay Navigation (Mobile) -->
     <div id="myNav" class="overlay">
       <div class="overlay-content">
         <a href="index.html">Home</a>
         <a href="about.html">What are BCI's?</a>
-        <a href="contact.html">How they help.</a>
+        <a href="contact.html" class="active">How they help.</a>
         <a href="blog.html">References</a>
       </div>
     </div>
   </nav>
-  <!-- Main Content -->
-  <section id="gallery_section">
-    <main>
-      <h2>How Do BCIs Help?</h2>
-      <p>
-        Brain-Computer Interfaces can restore independence for individuals with mobility or communication impairments. 
-        For example, BCIs enable patients with ALS to type using only their thoughts or help quadriplegics control robotic limbs.
-      </p>
-      <p>
-        In mental health, BCIs are being studied as potential treatments for depression, PTSD, and anxiety by modulating neural activity. 
-        They're also being tested in virtual reality for therapeutic immersion.
-      </p>
-      <p>
-        As research progresses, BCIs may improve learning, productivity, and even allow for new types of human-machine creativity and collaboration.
-      </p>
-    </main>
+
+  <!-- Section 1: Hero -->
+  <section class="hero-section full-section" id="section1">
+    <div>
+      <h1>How Do BCIs Help?</h1>
+      <p>Empowering independence, health, and creativity through technology.</p>
+      <button class="scroll-btn" onclick="scrollToSection('section2')">Learn More</button>
+    </div>
   </section>
+
+  <!-- Section 2: Introduction -->
+  <section class="info-section full-section section-blue" id="section2">
+    <div class="info-content">
+      <h2>Introduction to BCIs</h2>
+      <div class="img-placeholder">
+        <img src="https://via.placeholder.com/350x180?text=Your+Image+Here" alt="BCI Example" />
+      </div>
+      <p>
+        Brain-Computer Interfaces (BCIs) are systems that allow direct communication between the brain and external devices. They have the potential to revolutionize healthcare, accessibility, and human-computer interaction. 
+        <br><br>
+        BCIs work by detecting brain signals, interpreting them, and translating them into commands that can control computers, prosthetics, or other devices. This technology is still evolving, but its impact is already being felt in many fields.
+      </p>
+      <button class="scroll-btn" onclick="scrollToSection('section3')">Next</button>
+    </div>
+  </section>
+
+  <!-- Section 3: Applications -->
+  <section class="info-section full-section section-grey" id="section3">
+    <div class="info-content">
+      <h2>Applications of BCIs</h2>
+      <div class="img-placeholder">
+        <img src="https://via.placeholder.com/350x180?text=Application+Image" alt="BCI Application" />
+      </div>
+      <p>
+        BCIs are being used to help people with disabilities regain independence. For example, individuals with paralysis can use BCIs to control robotic arms or communicate through text-to-speech systems. 
+        <br><br>
+        In medicine, BCIs are being explored for neurorehabilitation, pain management, and even as tools for diagnosing neurological disorders. The possibilities are expanding as research continues.
+      </p>
+      <button class="scroll-btn" onclick="scrollToSection('section4')">Next</button>
+    </div>
+  </section>
+
+  <!-- Section 4: Challenges -->
+  <section class="info-section full-section section-white" id="section4">
+    <div class="info-content">
+      <h2>Challenges and Considerations</h2>
+      <div class="img-placeholder">
+        <img src="https://via.placeholder.com/350x180?text=Challenge+Image" alt="BCI Challenges" />
+      </div>
+      <p>
+        Despite their promise, BCIs face several challenges. Technical hurdles include improving signal accuracy, reducing invasiveness, and ensuring long-term reliability. 
+        <br><br>
+        Ethical and privacy concerns are also important. As BCIs become more advanced, questions about data security, consent, and the potential for misuse must be addressed.
+      </p>
+      <button class="scroll-btn" onclick="scrollToSection('section5')">Next</button>
+    </div>
+  </section>
+
+  <!-- Section 5: Future Directions -->
+  <section class="info-section full-section section-blue" id="section5">
+    <div class="info-content">
+      <h2>The Future of BCIs</h2>
+      <div class="img-placeholder">
+        <img src="https://via.placeholder.com/350x180?text=Future+Image" alt="BCI Future" />
+      </div>
+      <p>
+        The future of BCIs is bright. As technology advances, we can expect more seamless integration with everyday devices, improved accessibility, and new forms of communication and creativity.
+        <br><br>
+        Researchers are exploring non-invasive BCIs, brain-to-brain communication, and even ways to enhance cognitive abilities. The coming years will likely see BCIs become a common part of our digital lives.
+      </p>
+      <button class="scroll-btn" onclick="scrollToSection('section6')">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Section 6: Contact Form -->
+  <section class="contact-form-section full-section" id="section6">
+    <div>
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..." required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email..." required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="scroll-btn" style="width:100%;">Send Message</button>
+      </form>
+      <button class="scroll-btn" style="margin-top:2rem;" onclick="scrollToSection('section1')">Back to Top</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Brain-Computer Interfaces. All rights reserved.</p>
+  </footer>
 
   <script>
     function toggleNav(x) {
@@ -60,7 +139,9 @@
       const overlay = document.getElementById("myNav");
       overlay.style.width = overlay.style.width === "100%" ? "0%" : "100%";
     }
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
   </script>
-
 </body>
 </html>
